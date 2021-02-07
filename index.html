@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>〇〇部Webサイト（雛形）</title>
+    <link rel="icon" href="">
+    <meta name="description" content="〇〇部のサイトの雛形">
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="flex is-between is-center">
+        <div class="header-left">
+          <h1 class="header-seo">〇〇県で一番活気があるサークル</h1>
+          <p class="header-logo"><img src="img/nyugakushiki_hiragana.png" width="165"  alt="〇〇部"></p>
+        </div>
+
+        <div class="header-right">
+          <p class="header-tel">TEL:000-000-000</p>
+          <address class="header-address">〇〇県〇〇市〇〇町</address>
+        </div>
+      </div>
+      <div id="js-menu-btn" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="menu">
+        <ul class="flex">
+          <li class="active"><a href="index.html">ホーム</a></li>
+          <li><a href="action.html">活動一覧</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+          <li><a href="qa.html">よくある質問</a></li>
+          <li><a href="accsess.html">アクセス</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li class="sp-tel"><a href="tel:000-000-000">クリックして電話をかける</a></li>
+        </ul>
+      </nav>
+      <div class="manu-btn">
+        <span class="btn-line"></span>
+        <span class="btn-line"></span>
+        <span class="btn-line"></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <!-- header last -->
+    <div class="slider">
+      <a href=""><img src="img/nyugakushiki_hiragana.png" alt=""></a>
+      <a href=""><img src="img/nyugakushiki_hiragana.png" alt=""></a>
+      <a href=""><img src="img/nyugakushiki_hiragana.png" alt=""></a>
+    </div>
+
+    <section class="section-wrap">
+      <h2 class="section-title"><span>action</span>活動一覧</h2>
+      <div class="flex is-between section-content">
+        <section class="section-list">
+          <a href="#">
+          <p><img src="img/nyugakushiki_hiragana.png" width="300" alt="七夕のイメージ画像"></p>
+          <h3 class="section-list-title">七夕</h3>
+          <p>テキストが入ります。テキストが入ります。</p>
+        </a>
+        </section>
+
+        <section class="section-list">
+          <a href="#">
+            <p><img src="img/nyugakushiki_hiragana.png" width="300" alt="大学祭のイメージ画像"></p>
+            <h3 class="section-list-title">大学祭</h3>
+            <p>テキストが入ります。テキストが入ります。</p>
+          </a>
+        </section>
+
+        <section class="section-list">
+          <a href="#">
+            <p><img src="img/nyugakushiki_hiragana.png" width="300" alt="クリスマス会のイメージ画像"></p>
+            <h3 class="section-list-title">クリスマス会</h3>
+            <p>テキストが入ります。テキストが入ります。</p>
+          </a>
+        </section>
+      </div>
+
+      <p class="main-btn"><a href="action.html">活動一覧へ</a></p>
+    </section>
+
+    <section class="news-wrap">
+      <h2 class="section-title"><span>news</span>お知らせ</h2>
+      <dl class="news-list flex">
+        <dt>2021/2/7</dt>
+        <dd><a href="#">〇〇部webページ（雛形）の完成について。</a></dd>
+      </dl>
+      <p class="main-btn"><a href="action.html">お知らせ一覧へ</a></p>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner flex">
+        <div class="footer-address">
+          <p class="footer-logo">〇〇部</p>
+          <p class="footer-tel">TEL:000-000-000</p>
+          <address class="footer-address">〇〇県〇〇市〇〇町</address>
+        </div>
+
+        <nav class="footer-nav flex">
+          <ul class="footer-nav-list">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="action.html">活動一覧</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li><a href="qa.html">よくある質問</a></li>
+            <li><a href="accsess.html">アクセス</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="copylight"><small>copylight@〇〇部</small></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(function(){
+        $("#js-menu-btn").click(function(){
+          $('body').toggleClass("show");
+        })
+      })
+    </script>
+  </body>
+</html>
